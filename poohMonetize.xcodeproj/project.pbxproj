@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D5758471DDEA3A1002BC247 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5758461DDEA3A1002BC247 /* main.m */; };
+		1D57584A1DDEA3A1002BC247 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5758491DDEA3A1002BC247 /* AppDelegate.m */; };
+		1D57584D1DDEA3A1002BC247 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D57584C1DDEA3A1002BC247 /* ViewController.m */; };
+		1D5758501DDEA3A1002BC247 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D57584E1DDEA3A1002BC247 /* Main.storyboard */; };
+		1D5758521DDEA3A1002BC247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5758511DDEA3A1002BC247 /* Assets.xcassets */; };
+		1D5758551DDEA3A1002BC247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D5758531DDEA3A1002BC247 /* LaunchScreen.storyboard */; };
+		1D5758601DDEA3A1002BC247 /* poohMonetizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D57585F1DDEA3A1002BC247 /* poohMonetizeTests.m */; };
+		1D57586B1DDEA3A1002BC247 /* poohMonetizeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D57586A1DDEA3A1002BC247 /* poohMonetizeUITests.m */; };
+		1D5758881DDEA424002BC247 /* PoohAdmobBannerMonetize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D57587B1DDEA424002BC247 /* PoohAdmobBannerMonetize.m */; };
+		1D5758891DDEA424002BC247 /* PoohAdmobInterstitialMonetize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D57587D1DDEA424002BC247 /* PoohAdmobInterstitialMonetize.m */; };
+		1D57588A1DDEA424002BC247 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D57587F1DDEA424002BC247 /* GoogleMobileAds.framework */; };
+		1D57588B1DDEA424002BC247 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1D5758871DDEA424002BC247 /* README.txt */; };
+		1D5758BF1DDEA57E002BC247 /* UIResponder+TPCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5758A61DDEA57E002BC247 /* UIResponder+TPCategory.m */; };
+		1D5758CA1DDED001002BC247 /* PoohAdmobNativeMonetize.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5758C91DDED001002BC247 /* PoohAdmobNativeMonetize.m */; };
+		1D5758CD1DDED3CC002BC247 /* NativeContentAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D5758CB1DDED3CC002BC247 /* NativeContentAdView.xib */; };
+		1D5758CE1DDED3CC002BC247 /* NativeAppInstallAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D5758CC1DDED3CC002BC247 /* NativeAppInstallAdView.xib */; };
+		1D5758D41DDEDDCE002BC247 /* IOSiAP.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D5758D11DDEDDCE002BC247 /* IOSiAP.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1D5758F21DDEEE00002BC247 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5758F11DDEEE00002BC247 /* GameKit.framework */; };
+		1D5758FD1DDF0208002BC247 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5758F51DDF0208002BC247 /* GameCenterManager.m */; };
+		1D5758FE1DDF0208002BC247 /* GCMMultiplayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5758F81DDF0208002BC247 /* GCMMultiplayer.m */; };
+		1D5758FF1DDF0208002BC247 /* NSDataAES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5758FA1DDF0208002BC247 /* NSDataAES256.m */; };
+		1D5759001DDF0208002BC247 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5758FC1DDF0208002BC247 /* Reachability.m */; };
+		1DCC74771E0BA81200ED21DD /* HPHttpBasePagedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC746C1E0BA81200ED21DD /* HPHttpBasePagedRequest.m */; };
+		1DCC74781E0BA81200ED21DD /* HPHttpBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC746E1E0BA81200ED21DD /* HPHttpBaseRequest.m */; };
+		1DCC74791E0BA81200ED21DD /* HttpBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC74701E0BA81200ED21DD /* HttpBaseRequest.m */; };
+		1DCC747A1E0BA81200ED21DD /* HttpBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC74721E0BA81200ED21DD /* HttpBaseResponse.m */; };
+		1DCC747B1E0BA81200ED21DD /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC74741E0BA81200ED21DD /* HttpClient.m */; };
+		1DCC747C1E0BA81200ED21DD /* HttpError.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC74761E0BA81200ED21DD /* HttpError.m */; };
+		1DCC74841E0BA85F00ED21DD /* AppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC747F1E0BA85F00ED21DD /* AppHelper.m */; };
+		1DCC74851E0BA85F00ED21DD /* BaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC74811E0BA85F00ED21DD /* BaseObject.m */; };
+		1DCC74861E0BA85F00ED21DD /* ObjectBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC74831E0BA85F00ED21DD /* ObjectBuilder.m */; };
+		1DCC74931E0BAA4000ED21DD /* HttpAdNetConfigRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC74921E0BAA4000ED21DD /* HttpAdNetConfigRequest.m */; };
+		1DCC74961E0BAAC800ED21DD /* AdNetConfigObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC74951E0BAAC800ED21DD /* AdNetConfigObject.m */; };
+		1DCC74A91E0BAD2700ED21DD /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC74971E0BAD2700ED21DD /* UIViewExt.m */; };
+		1DCC74AA1E0BAD2700ED21DD /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC74991E0BAD2700ED21DD /* UIImage+Common.m */; };
+		1DCC74AB1E0BAD2700ED21DD /* UIImage+animatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC749B1E0BAD2700ED21DD /* UIImage+animatedGIF.m */; };
+		1DCC74AC1E0BAD2700ED21DD /* UIColor+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC749D1E0BAD2700ED21DD /* UIColor+Common.m */; };
+		1DCC74AD1E0BAD2700ED21DD /* NSString+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC749F1E0BAD2700ED21DD /* NSString+Common.m */; };
+		1DCC74AE1E0BAD2700ED21DD /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC74A11E0BAD2700ED21DD /* NSObject+Common.m */; };
+		1DCC74AF1E0BAD2700ED21DD /* NSDictionary+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC74A31E0BAD2700ED21DD /* NSDictionary+Common.m */; };
+		1DCC74B01E0BAD2700ED21DD /* NSDateFormatter+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC74A51E0BAD2700ED21DD /* NSDateFormatter+Category.m */; };
+		1DCC74B11E0BAD2700ED21DD /* NSDate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC74A71E0BAD2700ED21DD /* NSDate+Category.m */; };
+		1DCC74B41E0BB52500ED21DD /* AdNetConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC74B31E0BB52500ED21DD /* AdNetConfigManager.m */; };
+		EA5A19AE248129F3CFD9BDB6 /* Pods_poohMonetize.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F41170A820161B15BFCD94C /* Pods_poohMonetize.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D57585C1DDEA3A1002BC247 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D57583A1DDEA3A1002BC247 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D5758411DDEA3A1002BC247;
+			remoteInfo = poohMonetize;
+		};
+		1D5758671DDEA3A1002BC247 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D57583A1DDEA3A1002BC247 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D5758411DDEA3A1002BC247;
+			remoteInfo = poohMonetize;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D5758421DDEA3A1002BC247 /* poohMonetize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = poohMonetize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D5758461DDEA3A1002BC247 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1D5758481DDEA3A1002BC247 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D5758491DDEA3A1002BC247 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D57584B1DDEA3A1002BC247 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1D57584C1DDEA3A1002BC247 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1D57584F1DDEA3A1002BC247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D5758511DDEA3A1002BC247 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D5758541DDEA3A1002BC247 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D5758561DDEA3A1002BC247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D57585B1DDEA3A1002BC247 /* poohMonetizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = poohMonetizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D57585F1DDEA3A1002BC247 /* poohMonetizeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = poohMonetizeTests.m; sourceTree = "<group>"; };
+		1D5758611DDEA3A1002BC247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D5758661DDEA3A1002BC247 /* poohMonetizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = poohMonetizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D57586A1DDEA3A1002BC247 /* poohMonetizeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = poohMonetizeUITests.m; sourceTree = "<group>"; };
+		1D57586C1DDEA3A1002BC247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D57587A1DDEA424002BC247 /* PoohAdmobBannerMonetize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoohAdmobBannerMonetize.h; sourceTree = "<group>"; };
+		1D57587B1DDEA424002BC247 /* PoohAdmobBannerMonetize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoohAdmobBannerMonetize.m; sourceTree = "<group>"; };
+		1D57587D1DDEA424002BC247 /* PoohAdmobInterstitialMonetize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoohAdmobInterstitialMonetize.m; sourceTree = "<group>"; };
+		1D57587F1DDEA424002BC247 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		1D5758811DDEA424002BC247 /* GADMAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		1D5758821DDEA424002BC247 /* GADMAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		1D5758831DDEA424002BC247 /* GADMediationAdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMediationAdRequest.h; sourceTree = "<group>"; };
+		1D5758841DDEA424002BC247 /* GADMEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMEnums.h; sourceTree = "<group>"; };
+		1D5758851DDEA424002BC247 /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		1D5758861DDEA424002BC247 /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		1D5758871DDEA424002BC247 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		1D5758A51DDEA57E002BC247 /* UIResponder+TPCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+TPCategory.h"; sourceTree = "<group>"; };
+		1D5758A61DDEA57E002BC247 /* UIResponder+TPCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+TPCategory.m"; sourceTree = "<group>"; };
+		1D5758C61DDEAB80002BC247 /* PoohAdmobInterstitialMonetize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoohAdmobInterstitialMonetize.h; sourceTree = "<group>"; };
+		1D5758C71DDEAC87002BC247 /* PoohMonetizePublic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PoohMonetizePublic.h; path = CustomCategory/PoohMonetizePublic.h; sourceTree = "<group>"; };
+		1D5758C81DDED001002BC247 /* PoohAdmobNativeMonetize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoohAdmobNativeMonetize.h; sourceTree = "<group>"; };
+		1D5758C91DDED001002BC247 /* PoohAdmobNativeMonetize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoohAdmobNativeMonetize.m; sourceTree = "<group>"; };
+		1D5758CB1DDED3CC002BC247 /* NativeContentAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeContentAdView.xib; sourceTree = "<group>"; };
+		1D5758CC1DDED3CC002BC247 /* NativeAppInstallAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAppInstallAdView.xib; sourceTree = "<group>"; };
+		1D5758D01DDEDDCE002BC247 /* IOSiAP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSiAP.h; sourceTree = "<group>"; };
+		1D5758D11DDEDDCE002BC247 /* IOSiAP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IOSiAP.mm; sourceTree = "<group>"; };
+		1D5758F11DDEEE00002BC247 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		1D5758F41DDF0208002BC247 /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
+		1D5758F51DDF0208002BC247 /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
+		1D5758F61DDF0208002BC247 /* GCMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMConstants.h; sourceTree = "<group>"; };
+		1D5758F71DDF0208002BC247 /* GCMMultiplayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMMultiplayer.h; sourceTree = "<group>"; };
+		1D5758F81DDF0208002BC247 /* GCMMultiplayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMMultiplayer.m; sourceTree = "<group>"; };
+		1D5758F91DDF0208002BC247 /* NSDataAES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAES256.h; sourceTree = "<group>"; };
+		1D5758FA1DDF0208002BC247 /* NSDataAES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAES256.m; sourceTree = "<group>"; };
+		1D5758FB1DDF0208002BC247 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		1D5758FC1DDF0208002BC247 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		1DCC746B1E0BA81200ED21DD /* HPHttpBasePagedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPHttpBasePagedRequest.h; sourceTree = "<group>"; };
+		1DCC746C1E0BA81200ED21DD /* HPHttpBasePagedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPHttpBasePagedRequest.m; sourceTree = "<group>"; };
+		1DCC746D1E0BA81200ED21DD /* HPHttpBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPHttpBaseRequest.h; sourceTree = "<group>"; };
+		1DCC746E1E0BA81200ED21DD /* HPHttpBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPHttpBaseRequest.m; sourceTree = "<group>"; };
+		1DCC746F1E0BA81200ED21DD /* HttpBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpBaseRequest.h; sourceTree = "<group>"; };
+		1DCC74701E0BA81200ED21DD /* HttpBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpBaseRequest.m; sourceTree = "<group>"; };
+		1DCC74711E0BA81200ED21DD /* HttpBaseResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpBaseResponse.h; sourceTree = "<group>"; };
+		1DCC74721E0BA81200ED21DD /* HttpBaseResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpBaseResponse.m; sourceTree = "<group>"; };
+		1DCC74731E0BA81200ED21DD /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		1DCC74741E0BA81200ED21DD /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
+		1DCC74751E0BA81200ED21DD /* HttpError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpError.h; sourceTree = "<group>"; };
+		1DCC74761E0BA81200ED21DD /* HttpError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpError.m; sourceTree = "<group>"; };
+		1DCC747E1E0BA85F00ED21DD /* AppHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppHelper.h; sourceTree = "<group>"; };
+		1DCC747F1E0BA85F00ED21DD /* AppHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppHelper.m; sourceTree = "<group>"; };
+		1DCC74801E0BA85F00ED21DD /* BaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseObject.h; sourceTree = "<group>"; };
+		1DCC74811E0BA85F00ED21DD /* BaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseObject.m; sourceTree = "<group>"; };
+		1DCC74821E0BA85F00ED21DD /* ObjectBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectBuilder.h; sourceTree = "<group>"; };
+		1DCC74831E0BA85F00ED21DD /* ObjectBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectBuilder.m; sourceTree = "<group>"; };
+		1DCC74911E0BAA4000ED21DD /* HttpAdNetConfigRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpAdNetConfigRequest.h; sourceTree = "<group>"; };
+		1DCC74921E0BAA4000ED21DD /* HttpAdNetConfigRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpAdNetConfigRequest.m; sourceTree = "<group>"; };
+		1DCC74941E0BAAC800ED21DD /* AdNetConfigObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdNetConfigObject.h; sourceTree = "<group>"; };
+		1DCC74951E0BAAC800ED21DD /* AdNetConfigObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdNetConfigObject.m; sourceTree = "<group>"; };
+		1DCC74971E0BAD2700ED21DD /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		1DCC74981E0BAD2700ED21DD /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		1DCC74991E0BAD2700ED21DD /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Common.m"; sourceTree = "<group>"; };
+		1DCC749A1E0BAD2700ED21DD /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Common.h"; sourceTree = "<group>"; };
+		1DCC749B1E0BAD2700ED21DD /* UIImage+animatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+animatedGIF.m"; sourceTree = "<group>"; };
+		1DCC749C1E0BAD2700ED21DD /* UIImage+animatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+animatedGIF.h"; sourceTree = "<group>"; };
+		1DCC749D1E0BAD2700ED21DD /* UIColor+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Common.m"; sourceTree = "<group>"; };
+		1DCC749E1E0BAD2700ED21DD /* UIColor+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Common.h"; sourceTree = "<group>"; };
+		1DCC749F1E0BAD2700ED21DD /* NSString+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Common.m"; sourceTree = "<group>"; };
+		1DCC74A01E0BAD2700ED21DD /* NSString+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Common.h"; sourceTree = "<group>"; };
+		1DCC74A11E0BAD2700ED21DD /* NSObject+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Common.m"; sourceTree = "<group>"; };
+		1DCC74A21E0BAD2700ED21DD /* NSObject+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Common.h"; sourceTree = "<group>"; };
+		1DCC74A31E0BAD2700ED21DD /* NSDictionary+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Common.m"; sourceTree = "<group>"; };
+		1DCC74A41E0BAD2700ED21DD /* NSDictionary+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Common.h"; sourceTree = "<group>"; };
+		1DCC74A51E0BAD2700ED21DD /* NSDateFormatter+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Category.m"; sourceTree = "<group>"; };
+		1DCC74A61E0BAD2700ED21DD /* NSDateFormatter+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Category.h"; sourceTree = "<group>"; };
+		1DCC74A71E0BAD2700ED21DD /* NSDate+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Category.m"; sourceTree = "<group>"; };
+		1DCC74A81E0BAD2700ED21DD /* NSDate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
+		1DCC74B21E0BB52500ED21DD /* AdNetConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdNetConfigManager.h; sourceTree = "<group>"; };
+		1DCC74B31E0BB52500ED21DD /* AdNetConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdNetConfigManager.m; sourceTree = "<group>"; };
+		2441A673B9CCE7190F918C06 /* Pods-poohMonetize.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-poohMonetize.debug.xcconfig"; path = "Pods/Target Support Files/Pods-poohMonetize/Pods-poohMonetize.debug.xcconfig"; sourceTree = "<group>"; };
+		4354F003E3707C09DFDDC7C6 /* Pods-poohMonetize.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-poohMonetize.release.xcconfig"; path = "Pods/Target Support Files/Pods-poohMonetize/Pods-poohMonetize.release.xcconfig"; sourceTree = "<group>"; };
+		8F41170A820161B15BFCD94C /* Pods_poohMonetize.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_poohMonetize.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D57583F1DDEA3A1002BC247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D57588A1DDEA424002BC247 /* GoogleMobileAds.framework in Frameworks */,
+				1D5758F21DDEEE00002BC247 /* GameKit.framework in Frameworks */,
+				EA5A19AE248129F3CFD9BDB6 /* Pods_poohMonetize.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D5758581DDEA3A1002BC247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D5758631DDEA3A1002BC247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D5758391DDEA3A1002BC247 = {
+			isa = PBXGroup;
+			children = (
+				1D5758781DDEA424002BC247 /* ADMonetizeUtil */,
+				1D5758441DDEA3A1002BC247 /* poohMonetize */,
+				1D57585E1DDEA3A1002BC247 /* poohMonetizeTests */,
+				1D5758691DDEA3A1002BC247 /* poohMonetizeUITests */,
+				1D5758431DDEA3A1002BC247 /* Products */,
+				1D5758F01DDEEE00002BC247 /* Frameworks */,
+				DEE7DCA7761E88CA947E63C4 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		1D5758431DDEA3A1002BC247 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D5758421DDEA3A1002BC247 /* poohMonetize.app */,
+				1D57585B1DDEA3A1002BC247 /* poohMonetizeTests.xctest */,
+				1D5758661DDEA3A1002BC247 /* poohMonetizeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D5758441DDEA3A1002BC247 /* poohMonetize */ = {
+			isa = PBXGroup;
+			children = (
+				1D5758481DDEA3A1002BC247 /* AppDelegate.h */,
+				1D5758491DDEA3A1002BC247 /* AppDelegate.m */,
+				1D57584B1DDEA3A1002BC247 /* ViewController.h */,
+				1D57584C1DDEA3A1002BC247 /* ViewController.m */,
+				1D57584E1DDEA3A1002BC247 /* Main.storyboard */,
+				1D5758511DDEA3A1002BC247 /* Assets.xcassets */,
+				1D5758531DDEA3A1002BC247 /* LaunchScreen.storyboard */,
+				1D5758561DDEA3A1002BC247 /* Info.plist */,
+				1D5758451DDEA3A1002BC247 /* Supporting Files */,
+			);
+			path = poohMonetize;
+			sourceTree = "<group>";
+		};
+		1D5758451DDEA3A1002BC247 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D5758461DDEA3A1002BC247 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1D57585E1DDEA3A1002BC247 /* poohMonetizeTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D57585F1DDEA3A1002BC247 /* poohMonetizeTests.m */,
+				1D5758611DDEA3A1002BC247 /* Info.plist */,
+			);
+			path = poohMonetizeTests;
+			sourceTree = "<group>";
+		};
+		1D5758691DDEA3A1002BC247 /* poohMonetizeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1D57586A1DDEA3A1002BC247 /* poohMonetizeUITests.m */,
+				1D57586C1DDEA3A1002BC247 /* Info.plist */,
+			);
+			path = poohMonetizeUITests;
+			sourceTree = "<group>";
+		};
+		1D5758781DDEA424002BC247 /* ADMonetizeUtil */ = {
+			isa = PBXGroup;
+			children = (
+				1DCC74871E0BA95600ED21DD /* AdNetConfig */,
+				1DCC747D1E0BA85F00ED21DD /* Model */,
+				1DCC746A1E0BA81200ED21DD /* Http */,
+				1D5758F31DDF0208002BC247 /* GC Manager */,
+				1D5758CF1DDEDDCE002BC247 /* IOSIPA */,
+				1D57588C1DDEA57E002BC247 /* CustomCategory */,
+				1D5758791DDEA424002BC247 /* Admob */,
+				1D5758C71DDEAC87002BC247 /* PoohMonetizePublic.h */,
+			);
+			path = ADMonetizeUtil;
+			sourceTree = "<group>";
+		};
+		1D5758791DDEA424002BC247 /* Admob */ = {
+			isa = PBXGroup;
+			children = (
+				1D5758CB1DDED3CC002BC247 /* NativeContentAdView.xib */,
+				1D5758CC1DDED3CC002BC247 /* NativeAppInstallAdView.xib */,
+				1D57587A1DDEA424002BC247 /* PoohAdmobBannerMonetize.h */,
+				1D57587B1DDEA424002BC247 /* PoohAdmobBannerMonetize.m */,
+				1D5758C61DDEAB80002BC247 /* PoohAdmobInterstitialMonetize.h */,
+				1D57587D1DDEA424002BC247 /* PoohAdmobInterstitialMonetize.m */,
+				1D57587E1DDEA424002BC247 /* GoogleMobileAdsSdkiOS-7.10.0 */,
+				1D5758C81DDED001002BC247 /* PoohAdmobNativeMonetize.h */,
+				1D5758C91DDED001002BC247 /* PoohAdmobNativeMonetize.m */,
+			);
+			path = Admob;
+			sourceTree = "<group>";
+		};
+		1D57587E1DDEA424002BC247 /* GoogleMobileAdsSdkiOS-7.10.0 */ = {
+			isa = PBXGroup;
+			children = (
+				1D57587F1DDEA424002BC247 /* GoogleMobileAds.framework */,
+				1D5758801DDEA424002BC247 /* Mediation Adapters */,
+			);
+			path = "GoogleMobileAdsSdkiOS-7.10.0";
+			sourceTree = "<group>";
+		};
+		1D5758801DDEA424002BC247 /* Mediation Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				1D5758811DDEA424002BC247 /* GADMAdNetworkAdapterProtocol.h */,
+				1D5758821DDEA424002BC247 /* GADMAdNetworkConnectorProtocol.h */,
+				1D5758831DDEA424002BC247 /* GADMediationAdRequest.h */,
+				1D5758841DDEA424002BC247 /* GADMEnums.h */,
+				1D5758851DDEA424002BC247 /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */,
+				1D5758861DDEA424002BC247 /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */,
+				1D5758871DDEA424002BC247 /* README.txt */,
+			);
+			path = "Mediation Adapters";
+			sourceTree = "<group>";
+		};
+		1D57588C1DDEA57E002BC247 /* CustomCategory */ = {
+			isa = PBXGroup;
+			children = (
+				1DCC74971E0BAD2700ED21DD /* UIViewExt.m */,
+				1DCC74981E0BAD2700ED21DD /* UIViewExt.h */,
+				1DCC74991E0BAD2700ED21DD /* UIImage+Common.m */,
+				1DCC749A1E0BAD2700ED21DD /* UIImage+Common.h */,
+				1DCC749B1E0BAD2700ED21DD /* UIImage+animatedGIF.m */,
+				1DCC749C1E0BAD2700ED21DD /* UIImage+animatedGIF.h */,
+				1DCC749D1E0BAD2700ED21DD /* UIColor+Common.m */,
+				1DCC749E1E0BAD2700ED21DD /* UIColor+Common.h */,
+				1DCC749F1E0BAD2700ED21DD /* NSString+Common.m */,
+				1DCC74A01E0BAD2700ED21DD /* NSString+Common.h */,
+				1DCC74A11E0BAD2700ED21DD /* NSObject+Common.m */,
+				1DCC74A21E0BAD2700ED21DD /* NSObject+Common.h */,
+				1DCC74A31E0BAD2700ED21DD /* NSDictionary+Common.m */,
+				1DCC74A41E0BAD2700ED21DD /* NSDictionary+Common.h */,
+				1DCC74A51E0BAD2700ED21DD /* NSDateFormatter+Category.m */,
+				1DCC74A61E0BAD2700ED21DD /* NSDateFormatter+Category.h */,
+				1DCC74A71E0BAD2700ED21DD /* NSDate+Category.m */,
+				1DCC74A81E0BAD2700ED21DD /* NSDate+Category.h */,
+				1D5758A51DDEA57E002BC247 /* UIResponder+TPCategory.h */,
+				1D5758A61DDEA57E002BC247 /* UIResponder+TPCategory.m */,
+			);
+			path = CustomCategory;
+			sourceTree = "<group>";
+		};
+		1D5758CF1DDEDDCE002BC247 /* IOSIPA */ = {
+			isa = PBXGroup;
+			children = (
+				1D5758D01DDEDDCE002BC247 /* IOSiAP.h */,
+				1D5758D11DDEDDCE002BC247 /* IOSiAP.mm */,
+			);
+			path = IOSIPA;
+			sourceTree = "<group>";
+		};
+		1D5758F01DDEEE00002BC247 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D5758F11DDEEE00002BC247 /* GameKit.framework */,
+				8F41170A820161B15BFCD94C /* Pods_poohMonetize.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D5758F31DDF0208002BC247 /* GC Manager */ = {
+			isa = PBXGroup;
+			children = (
+				1D5758F41DDF0208002BC247 /* GameCenterManager.h */,
+				1D5758F51DDF0208002BC247 /* GameCenterManager.m */,
+				1D5758F61DDF0208002BC247 /* GCMConstants.h */,
+				1D5758F71DDF0208002BC247 /* GCMMultiplayer.h */,
+				1D5758F81DDF0208002BC247 /* GCMMultiplayer.m */,
+				1D5758F91DDF0208002BC247 /* NSDataAES256.h */,
+				1D5758FA1DDF0208002BC247 /* NSDataAES256.m */,
+				1D5758FB1DDF0208002BC247 /* Reachability.h */,
+				1D5758FC1DDF0208002BC247 /* Reachability.m */,
+			);
+			path = "GC Manager";
+			sourceTree = "<group>";
+		};
+		1DCC746A1E0BA81200ED21DD /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				1DCC746B1E0BA81200ED21DD /* HPHttpBasePagedRequest.h */,
+				1DCC746C1E0BA81200ED21DD /* HPHttpBasePagedRequest.m */,
+				1DCC746D1E0BA81200ED21DD /* HPHttpBaseRequest.h */,
+				1DCC746E1E0BA81200ED21DD /* HPHttpBaseRequest.m */,
+				1DCC746F1E0BA81200ED21DD /* HttpBaseRequest.h */,
+				1DCC74701E0BA81200ED21DD /* HttpBaseRequest.m */,
+				1DCC74711E0BA81200ED21DD /* HttpBaseResponse.h */,
+				1DCC74721E0BA81200ED21DD /* HttpBaseResponse.m */,
+				1DCC74731E0BA81200ED21DD /* HttpClient.h */,
+				1DCC74741E0BA81200ED21DD /* HttpClient.m */,
+				1DCC74751E0BA81200ED21DD /* HttpError.h */,
+				1DCC74761E0BA81200ED21DD /* HttpError.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		1DCC747D1E0BA85F00ED21DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1DCC747E1E0BA85F00ED21DD /* AppHelper.h */,
+				1DCC747F1E0BA85F00ED21DD /* AppHelper.m */,
+				1DCC74801E0BA85F00ED21DD /* BaseObject.h */,
+				1DCC74811E0BA85F00ED21DD /* BaseObject.m */,
+				1DCC74821E0BA85F00ED21DD /* ObjectBuilder.h */,
+				1DCC74831E0BA85F00ED21DD /* ObjectBuilder.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1DCC74871E0BA95600ED21DD /* AdNetConfig */ = {
+			isa = PBXGroup;
+			children = (
+				1DCC74911E0BAA4000ED21DD /* HttpAdNetConfigRequest.h */,
+				1DCC74921E0BAA4000ED21DD /* HttpAdNetConfigRequest.m */,
+				1DCC74941E0BAAC800ED21DD /* AdNetConfigObject.h */,
+				1DCC74951E0BAAC800ED21DD /* AdNetConfigObject.m */,
+				1DCC74B21E0BB52500ED21DD /* AdNetConfigManager.h */,
+				1DCC74B31E0BB52500ED21DD /* AdNetConfigManager.m */,
+			);
+			path = AdNetConfig;
+			sourceTree = "<group>";
+		};
+		DEE7DCA7761E88CA947E63C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2441A673B9CCE7190F918C06 /* Pods-poohMonetize.debug.xcconfig */,
+				4354F003E3707C09DFDDC7C6 /* Pods-poohMonetize.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D5758411DDEA3A1002BC247 /* poohMonetize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D57586F1DDEA3A1002BC247 /* Build configuration list for PBXNativeTarget "poohMonetize" */;
+			buildPhases = (
+				CD0FBAB975E18E9316701EE1 /* [CP] Check Pods Manifest.lock */,
+				1D57583E1DDEA3A1002BC247 /* Sources */,
+				1D57583F1DDEA3A1002BC247 /* Frameworks */,
+				1D5758401DDEA3A1002BC247 /* Resources */,
+				07C252B86DB319BB45DF68DE /* [CP] Embed Pods Frameworks */,
+				30B82554A154CB0F1246E2EE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = poohMonetize;
+			productName = poohMonetize;
+			productReference = 1D5758421DDEA3A1002BC247 /* poohMonetize.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1D57585A1DDEA3A1002BC247 /* poohMonetizeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D5758721DDEA3A1002BC247 /* Build configuration list for PBXNativeTarget "poohMonetizeTests" */;
+			buildPhases = (
+				1D5758571DDEA3A1002BC247 /* Sources */,
+				1D5758581DDEA3A1002BC247 /* Frameworks */,
+				1D5758591DDEA3A1002BC247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D57585D1DDEA3A1002BC247 /* PBXTargetDependency */,
+			);
+			name = poohMonetizeTests;
+			productName = poohMonetizeTests;
+			productReference = 1D57585B1DDEA3A1002BC247 /* poohMonetizeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1D5758651DDEA3A1002BC247 /* poohMonetizeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D5758751DDEA3A1002BC247 /* Build configuration list for PBXNativeTarget "poohMonetizeUITests" */;
+			buildPhases = (
+				1D5758621DDEA3A1002BC247 /* Sources */,
+				1D5758631DDEA3A1002BC247 /* Frameworks */,
+				1D5758641DDEA3A1002BC247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D5758681DDEA3A1002BC247 /* PBXTargetDependency */,
+			);
+			name = poohMonetizeUITests;
+			productName = poohMonetizeUITests;
+			productReference = 1D5758661DDEA3A1002BC247 /* poohMonetizeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D57583A1DDEA3A1002BC247 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = com.kat;
+				TargetAttributes = {
+					1D5758411DDEA3A1002BC247 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8NT4E7BWNP;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
+					};
+					1D57585A1DDEA3A1002BC247 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8NT4E7BWNP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1D5758411DDEA3A1002BC247;
+					};
+					1D5758651DDEA3A1002BC247 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8NT4E7BWNP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1D5758411DDEA3A1002BC247;
+					};
+				};
+			};
+			buildConfigurationList = 1D57583D1DDEA3A1002BC247 /* Build configuration list for PBXProject "poohMonetize" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D5758391DDEA3A1002BC247;
+			productRefGroup = 1D5758431DDEA3A1002BC247 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D5758411DDEA3A1002BC247 /* poohMonetize */,
+				1D57585A1DDEA3A1002BC247 /* poohMonetizeTests */,
+				1D5758651DDEA3A1002BC247 /* poohMonetizeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D5758401DDEA3A1002BC247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D5758551DDEA3A1002BC247 /* LaunchScreen.storyboard in Resources */,
+				1D5758521DDEA3A1002BC247 /* Assets.xcassets in Resources */,
+				1D5758CE1DDED3CC002BC247 /* NativeAppInstallAdView.xib in Resources */,
+				1D5758CD1DDED3CC002BC247 /* NativeContentAdView.xib in Resources */,
+				1D57588B1DDEA424002BC247 /* README.txt in Resources */,
+				1D5758501DDEA3A1002BC247 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D5758591DDEA3A1002BC247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D5758641DDEA3A1002BC247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07C252B86DB319BB45DF68DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-poohMonetize/Pods-poohMonetize-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30B82554A154CB0F1246E2EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-poohMonetize/Pods-poohMonetize-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD0FBAB975E18E9316701EE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D57583E1DDEA3A1002BC247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DCC747B1E0BA81200ED21DD /* HttpClient.m in Sources */,
+				1DCC74B11E0BAD2700ED21DD /* NSDate+Category.m in Sources */,
+				1DCC74851E0BA85F00ED21DD /* BaseObject.m in Sources */,
+				1D5758FF1DDF0208002BC247 /* NSDataAES256.m in Sources */,
+				1DCC74AA1E0BAD2700ED21DD /* UIImage+Common.m in Sources */,
+				1DCC74A91E0BAD2700ED21DD /* UIViewExt.m in Sources */,
+				1DCC74771E0BA81200ED21DD /* HPHttpBasePagedRequest.m in Sources */,
+				1DCC74B41E0BB52500ED21DD /* AdNetConfigManager.m in Sources */,
+				1D5758881DDEA424002BC247 /* PoohAdmobBannerMonetize.m in Sources */,
+				1DCC747A1E0BA81200ED21DD /* HttpBaseResponse.m in Sources */,
+				1D5758BF1DDEA57E002BC247 /* UIResponder+TPCategory.m in Sources */,
+				1DCC74AD1E0BAD2700ED21DD /* NSString+Common.m in Sources */,
+				1DCC74B01E0BAD2700ED21DD /* NSDateFormatter+Category.m in Sources */,
+				1DCC74861E0BA85F00ED21DD /* ObjectBuilder.m in Sources */,
+				1DCC74AB1E0BAD2700ED21DD /* UIImage+animatedGIF.m in Sources */,
+				1DCC74AF1E0BAD2700ED21DD /* NSDictionary+Common.m in Sources */,
+				1D5758FD1DDF0208002BC247 /* GameCenterManager.m in Sources */,
+				1D57584D1DDEA3A1002BC247 /* ViewController.m in Sources */,
+				1DCC74791E0BA81200ED21DD /* HttpBaseRequest.m in Sources */,
+				1DCC74781E0BA81200ED21DD /* HPHttpBaseRequest.m in Sources */,
+				1D5758CA1DDED001002BC247 /* PoohAdmobNativeMonetize.m in Sources */,
+				1D57584A1DDEA3A1002BC247 /* AppDelegate.m in Sources */,
+				1D5758FE1DDF0208002BC247 /* GCMMultiplayer.m in Sources */,
+				1D5758471DDEA3A1002BC247 /* main.m in Sources */,
+				1D5758D41DDEDDCE002BC247 /* IOSiAP.mm in Sources */,
+				1D5759001DDF0208002BC247 /* Reachability.m in Sources */,
+				1DCC74AE1E0BAD2700ED21DD /* NSObject+Common.m in Sources */,
+				1DCC74AC1E0BAD2700ED21DD /* UIColor+Common.m in Sources */,
+				1DCC74961E0BAAC800ED21DD /* AdNetConfigObject.m in Sources */,
+				1DCC74931E0BAA4000ED21DD /* HttpAdNetConfigRequest.m in Sources */,
+				1DCC747C1E0BA81200ED21DD /* HttpError.m in Sources */,
+				1DCC74841E0BA85F00ED21DD /* AppHelper.m in Sources */,
+				1D5758891DDEA424002BC247 /* PoohAdmobInterstitialMonetize.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D5758571DDEA3A1002BC247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D5758601DDEA3A1002BC247 /* poohMonetizeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D5758621DDEA3A1002BC247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D57586B1DDEA3A1002BC247 /* poohMonetizeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D57585D1DDEA3A1002BC247 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D5758411DDEA3A1002BC247 /* poohMonetize */;
+			targetProxy = 1D57585C1DDEA3A1002BC247 /* PBXContainerItemProxy */;
+		};
+		1D5758681DDEA3A1002BC247 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D5758411DDEA3A1002BC247 /* poohMonetize */;
+			targetProxy = 1D5758671DDEA3A1002BC247 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1D57584E1DDEA3A1002BC247 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D57584F1DDEA3A1002BC247 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D5758531DDEA3A1002BC247 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D5758541DDEA3A1002BC247 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D57586D1DDEA3A1002BC247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D57586E1DDEA3A1002BC247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D5758701DDEA3A1002BC247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2441A673B9CCE7190F918C06 /* Pods-poohMonetize.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8NT4E7BWNP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ADMonetizeUtil/Admob/GoogleMobileAdsSdkiOS-7.10.0",
+				);
+				INFOPLIST_FILE = poohMonetize/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winnie.pooh.yqkGuLing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1D5758711DDEA3A1002BC247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4354F003E3707C09DFDDC7C6 /* Pods-poohMonetize.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8NT4E7BWNP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ADMonetizeUtil/Admob/GoogleMobileAdsSdkiOS-7.10.0",
+				);
+				INFOPLIST_FILE = poohMonetize/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.winnie.pooh.yqkGuLing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1D5758731DDEA3A1002BC247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8NT4E7BWNP;
+				INFOPLIST_FILE = poohMonetizeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kat.poohMonetizeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/poohMonetize.app/poohMonetize";
+			};
+			name = Debug;
+		};
+		1D5758741DDEA3A1002BC247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8NT4E7BWNP;
+				INFOPLIST_FILE = poohMonetizeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kat.poohMonetizeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/poohMonetize.app/poohMonetize";
+			};
+			name = Release;
+		};
+		1D5758761DDEA3A1002BC247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8NT4E7BWNP;
+				INFOPLIST_FILE = poohMonetizeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kat.poohMonetizeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = poohMonetize;
+			};
+			name = Debug;
+		};
+		1D5758771DDEA3A1002BC247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 8NT4E7BWNP;
+				INFOPLIST_FILE = poohMonetizeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kat.poohMonetizeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = poohMonetize;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D57583D1DDEA3A1002BC247 /* Build configuration list for PBXProject "poohMonetize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D57586D1DDEA3A1002BC247 /* Debug */,
+				1D57586E1DDEA3A1002BC247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D57586F1DDEA3A1002BC247 /* Build configuration list for PBXNativeTarget "poohMonetize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D5758701DDEA3A1002BC247 /* Debug */,
+				1D5758711DDEA3A1002BC247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D5758721DDEA3A1002BC247 /* Build configuration list for PBXNativeTarget "poohMonetizeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D5758731DDEA3A1002BC247 /* Debug */,
+				1D5758741DDEA3A1002BC247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D5758751DDEA3A1002BC247 /* Build configuration list for PBXNativeTarget "poohMonetizeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D5758761DDEA3A1002BC247 /* Debug */,
+				1D5758771DDEA3A1002BC247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D57583A1DDEA3A1002BC247 /* Project object */;
+}
