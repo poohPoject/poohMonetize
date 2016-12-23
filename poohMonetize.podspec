@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 	s.name = 'poohMonetize'
 	s.version = '1.0.0'
-	s.description = '框架'
+	s.description = '框架ASS'
 	s.summary = 'ADMonetize code'
 	s.requires_arc = true
 	s.ios.deployment_target = '8.0'
